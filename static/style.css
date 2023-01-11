@@ -131,7 +131,15 @@ i.menu-mobile {
     align-items: center;
 }
 
-@media (max-width: 1700px) {
+.menu-nav-active {
+    overflow: hidden;
+}
+
+.menu-nav-active #header {
+    left: 0;
+}
+
+@media (max-width: 1600px) {
     #header {
         left: -300px;
     }
@@ -139,9 +147,10 @@ i.menu-mobile {
         display: flex;
     }
     section#home h2{
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
     #main{
         margin-left: 0;
     }
 }
+
