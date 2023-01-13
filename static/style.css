@@ -158,3 +158,25 @@ i.menu-mobile {
     background-color: #090909;
 
 }
+
+.cv-title{
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cv-item{
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid white;
+    position: relative;
+}
+
+.cv-item h5{
+    padding: 5px 0px;
+    background-color: #090909;
+    display: inline-block;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
