@@ -106,7 +106,7 @@ section#home{
 }
 
 section#home h2{
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 
@@ -154,3 +154,7 @@ i.menu-mobile {
     }
 }
 
+.section-bg{
+    background-color: #090909;
+
+}
