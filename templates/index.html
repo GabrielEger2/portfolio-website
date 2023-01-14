@@ -44,7 +44,7 @@
                     <a class="nav-link" href="#resume"><i class="bi bi-body-text"></i>Resume</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-archive-fill"></i>Projects</a>
+                    <a class="nav-link" href="#projects"><i class="bi bi-archive-fill"></i>Projects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="bi bi-envelope-at-fill"></i>Contact</a>
@@ -219,6 +219,17 @@
                         </div>
                         <div class="cv-item">
                             <h4>Experience</h4>
+                            <h5> 2022-2023 </h5>
+                            <p><em>College stuff 2</em></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Cras eget erat ultricies, finibus purus id,
+                                bibendum lacus. Vestibulum ante ipsum primis in 
+                                faucibus orci luctus et ultrices posuere cubilia curae; 
+                                Fusce vulputate, libero mollis pharetra suscipit, odio 
+                                tortor mattis risus, vitae mollis nisi sapien at eros.</p>
+                        </div>
+                        <div class="cv-item">
+                            <h4>Experience</h4>
                             <h5>2022-2026</h5>
                             <p><em>College stuff 3</em></p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -258,7 +269,7 @@
                     <div class="cv-item">
                         <h4>Experience</h4>
                         <h5>2022-2025</h5>
-                        <p><em>Work stuff 2</em></p>
+                        <p><em>Work stuff 3</em></p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Cras eget erat ultricies, finibus purus id,
                             bibendum lacus. Vestibulum ante ipsum primis in 
@@ -267,20 +278,149 @@
                             tortor mattis risus, vitae mollis nisi sapien at eros.</p>
                     </div>
                 </div>
+                
                 </div>
             </div>
         </section>
 
-        <section class="mt-5 section-bg" id="projects">
-            <div class="container">
-            <div class="row w-100">
-                <div class="col-md-12 text-white">
-                    <h2>&nbsp;</h2>
-                    <h2 class= 'pt-3'>My projects</h2>
+        <section id="projects" class="section-bg mt-5">
+            <div class="container pb-5 pt-5">
+
+                <h2 class="pb-4 text-white">Projects</h2>
+                <p class="text-white">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Cras eget erat ultricies, finibus purus id,
+                    bibendum lacus. Vestibulum ante ipsum primis in 
+                    faucibus orci luctus et ultrices posuere cubilia curae; 
+                    Fusce vulputate, libero mollis pharetra suscipit, odio 
+                    tortor mattis risus, vitae mollis nisi sapien at eros. 
+                    Nunc lacinia egestas nisl vitae gravida. Nullam ultrices 
+                    tempus leo, ut fermentum dui fringilla et. Nullam accumsan 
+                    erat metus, nec dapibus orci cursus consectetur. 
+                    Pellentesque feugiat vestibulum fringilla.
+                </p>
+
+                <div id="carouselPortfolio" class="carousel carousel-dark slide pt-5" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="../static/img/github_movie.png" class="card-img-top"
+                                            alt="Movies Revenues Analysis">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Movies Revenues Analysis</h5>
+                                            <p class="card-text">An analysis of movies revenues from inputted directors using 
+                                                Pandas, Seaborn, Requests and beautiful soup</p>
+                                            <div class="d-flex justify-content-center">
+                                                <a href="https://github.com/GabrielEger2/movies-revenues-analysis"
+                                                target='_blank' class="btn btn-outline-dark me-3"><i
+                                                class="bi bi-github"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="../static/img/github_text.png" class="card-img-top img-fluid w-100"
+                                            alt="Image to Text Converter">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Image to Text Converter
+                                            </h5>
+                                            <p class="card-text">An image-to-text converter using OpenCV, Pytesseract and Python Regular Expression</p>
+                                            <div class="d-flex justify-content-center">
+                                                <a href="https://github.com/GabrielEger2/image-to-text-converter"
+                                                    target='_blank' class="btn btn-outline-dark me-3"><i
+                                                        class="bi bi-github"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="../static/img/github_music.png" class="card-img-top img-fluid w-100"
+                                            alt="print do blog">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Music Time Back Machine
+                                            </h5>
+                                            <p class="card-text">An app that takes the top 100 music of a particular day and creates a 
+                                                playlist on Spotify based on that, using Qt, Beautiful Soup, CSS, Requests and Spotipy</p>
+                                            <div class="d-flex justify-content-center">
+                                                <a href="https://github.com/GabrielEger2/music-time-back-machine" target='_blank'
+                                                    class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="../static/img/github_password.png" class="card-img-top img-fluid w-100"
+                                            alt="print do blog">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Password Manager
+                                            </h5>
+                                            <p class="card-text">A simple password manager with a GUI using JSON, CSS and Qt</p>
+                                            <div class="d-flex justify-content-center">
+                                                <a href="https://github.com/GabrielEger2/password-manager" target='_blank'
+                                                    class="btn btn-outline-dark me-3"><i class="bi bi-github"></i></a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="../static/img/github_work.png" class="card-img-top img-fluid w-100"
+                                            alt="print do blog">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Work in Progress</h5>
+                                            <p class="card-text">Work in Progress</p>
+                                            <p class="card-text">Please wait...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="../static/img/github_work.png" class="card-img-top img-fluid w-100"
+                                            alt="print do blog">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Work in Progress</h5>
+                                            <p class="card-text">Work in Progress</p>
+                                            <p class="card-text">Please wait...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortfolio"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPortfolio"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
+                <h2>&nbsp;</h2>
             </div>
-            </div>
-            <h2>&nbsp;</h2>
         </section>
     
     </main>

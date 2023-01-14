@@ -179,4 +179,30 @@ i.menu-mobile {
     font-weight: 600;
     margin-top: 10px;
 }
-
+  
+  .carousel-control-prev{
+    margin-left: -8rem;
+    filter: invert(100%);
+  }
+  
+  .carousel-control-next{
+    margin-right: -8rem;
+    filter: invert(100%);
+  }
+  
+  .carousel-indicators{
+    margin-bottom: -35px;
+    filter: invert(100%);
+  }
+  
+  @media (max-width: 1860px){
+    .carousel-control-prev{
+      margin-left: 0;
+      filter: invert(100%);
+    }
+  
+    .carousel-control-next{
+      margin-right: 0;
+      filter: invert(100%);
+    }
+  }
