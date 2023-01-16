@@ -1,4 +1,5 @@
 from flask import Flask, render_template, redirect
+from flask_mail import Mail, Message
 
 app = Flask(__name__)
 
