@@ -428,24 +428,26 @@
                     <div class="col-md-7 mt-5 mt-md-0">
                         <div class="card p-5 h-100 shadow border-0">
 
-                            <form class="row g-3">
+                            <form class="row g-3" action="/send" method="POST">
                                 <div class="col-md-6">
                                     <label for="name" class="form-label">Name:</label>
-                                    <input type="text" class="form-control" id="name" name='name'>
+                                    <input type="text" class="form-control" id="name" name='name' required>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="email" class="form-label">Email:</label>
-                                    <input type="email" class="form-control" id="email" name='email'>
+                                    <input type="email" class="form-control" id="email" name='email' required>
                                 </div>
 
                                 <div class="col-12">
                                     <label for="message" class="form-label">Message:</label>
-                                    <textarea type="text" class="form-control" id="message" name='message' rows="10"></textarea>
+                                    <textarea type="text" class="form-control" id="message" name='message' rows="10" required></textarea>
                                 </div>
 
 
                                 <div class="button-submit col-12 d-flex justify-content-center mt-4">
-                                    <button style="background-color: black;" type="submit" class="btn btn-primary">Send message</button>
+                                    <button id='btn-send' style="background-color: black;" type="submit" class="btn btn-primary">Send message</button>
+                                    <button id='btn-send-loader' style="background-color: black;" class="btn btn-primary" type="button" disabled>
+                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>Loading...</button>
                                 </div>
                             </form>
 
@@ -456,6 +458,19 @@
             </div>
 
         </section>
+
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <div id="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="bi bi-check-circle-fill"></i> {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+
 
     </main>
 

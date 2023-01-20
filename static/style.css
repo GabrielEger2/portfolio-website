@@ -17,7 +17,7 @@ html, body{
     width: 300px;
     transition: all ease-in-out 0.5s;
     padding: 0 15px;
-    z-index: auto;
+    z-index: 1000000;
 }
 
 #header .profile img{
@@ -211,3 +211,14 @@ i.menu-mobile {
       filter: invert(100%);
     }
   }
+
+  #btn-send-loader{
+    display: none;
+  }
+  
+  #alert {
+    position: fixed;
+    z-index: 10;
+    top: 30px;
+    right: 30px;
+  }	
